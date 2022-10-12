@@ -1,0 +1,19 @@
+{
+  "name": "mario.work",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.37"
+  }
+}
