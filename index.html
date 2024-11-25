@@ -1,103 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mario Diez</title>
-  </head>
-  <body>
-    <header class="site-menu">
-      <div class="wrapper">
-        <div class="inner-wrapper">
-          <a class="logo" href="#">
-            <div class="lettering">
-              <svg
-                class="welcome isVisible"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="450 175 140 10"
-              >
-                <g
-                  class="letters"
-                  id="lettering-welcome"
-                  mask="url(#mask-)"
-                  fill="black"
-                  font-family="Sandra Belhock"
-                  font-size="35.4"
-                  font-weight="100"
-                  letter-spacing="0"
-                  word-spacing="0"
-                >
-                  <path
-                    id="letter-welcome-m"
-                    mask="url(#mask-welcome-m)"
-                    style="
-                      line-height: 1.25;
-                      -inkscape-font-specification: 'Sandra Belhock, Normal';
-                      font-variant-ligatures: normal;
-                      font-variant-caps: normal;
-                      font-variant-numeric: normal;
-                      font-variant-east-asian: normal;
-                      white-space: pre;
-                    "
-                    d="M 465.7425 185.049 Q 468.3647 183.8572 469.5566 182.4268 Q 470.9868 180.7582 472.1787 179.3278 Q 482 170 493.3946 160.0191 L 496.4935 157.8737 Q 501.2611 155.4899 504.3601 159.7807 Q 506.5055 163.1181 506.5055 166.9321 L 505.7904 182.6653 L 505.0752 188.6248 Q 506.5055 189.3399 507.2207 188.8631 Q 507.9358 188.148 508.4126 187.6711 L 519.6164 174.7987 Q 520.8083 173.6067 522.0002 172.4149 Q 523.4305 170.9845 524.8608 169.7927 Q 526.7679 168.6007 528.6749 169.0776 Q 530.8203 169.316 532.0122 171.2229 Q 532.489 172.4149 532.7274 173.8451 Q 532.9657 175.2755 533.4425 176.7056 Q 534.396 179.5662 534.8728 182.6652 Q 535.5879 185.5257 536.7798 188.6247 Q 537.2566 190.5317 538.2101 192.2004 Q 539.1636 193.6307 540.3555 195.2993 Q 543.4545 199.3518 547.9837 196.968 Q 552.7513 194.5842 557.0422 190.055 Q 561.5714 185.5257 565.3855 179.8046 Q 569.4379 174.0835 572.7753 168.124 Q 576.1126 161.9261 578.4964 156.6817 Q 579.9267 155.7282 580.4034 155.9666 Q 581.1186 156.2049 581.357 157.1585 Q 581.8337 158.1121 581.8337 159.5423 V 161.6877 Q 582.3105 167.1705 578.4964 174.5602 Q 574.6823 181.7116 568.9612 188.3863 Q 563.4784 194.8226 557.7573 199.8285 Q 552.2746 204.5962 549.1756 205.3113 Q 544.8848 207.4567 540.5939 205.7881 Q 536.5414 203.8811 532.9657 200.5437 Q 527.9598 195.2993 525.3376 187.9095 L 524.384 185.5257 Q 523.9073 184.0954 523.4305 182.9035 Q 522.0002 182.4268 521.2851 183.3803 Q 520.8083 184.0954 520.3316 184.5722 Q 517.9478 187.1944 515.8024 190.055 Q 513.6569 192.9155 511.2731 195.7761 Q 510.3196 196.968 509.1277 198.1599 Q 508.1742 199.1134 506.7439 200.3053 Q 504.1217 202.2124 501.2611 201.974 Q 498.4006 201.4972 496.4935 198.875 Q 495.54 197.6831 495.0633 196.4912 Q 494.5865 195.0609 494.1097 193.869 Q 492.9178 190.5317 492.9178 187.1944 Q 493.1562 183.6187 493.633 180.2814 Q 493.8714 177.6592 493.8714 175.5137 Q 494.1097 173.1299 494.5865 170.7461 Q 494.5865 170.031 494.3481 169.3159 Q 494.3481 168.6007 494.1097 167.4088 Q 492.9178 168.124 491.9643 168.6007 L 490.534 169.5542 L 484.3361 175.2754 Q 481.4756 177.8976 478.615 180.9965 Q 475.5161 184.5722 472.6555 188.1479 Q 470.0333 191.7236 466.9344 195.5377 Q 465.9808 196.7296 465.0273 197.6831 Q 464.3122 198.6366 463.1203 199.5902 Q 460.4981 201.7356 457.6375 201.0204 Q 454.777 200.3053 453.5851 197.2064 Q 452.8699 195.5377 452.8699 193.1539 Q 453.1083 191.2469 453.3467 189.5782 Q 453.5851 187.6711 454.0618 185.7641 Q 455.7305 179.5662 458.1143 173.8451 Q 460.2597 168.124 463.1203 162.6412 Q 464.3122 160.7342 465.7425 159.0655 L 468.603 155.2514 Q 469.0798 154.7747 470.0333 154.7747 Q 470.9868 154.5363 471.4636 154.7747 Q 472.8939 155.2514 472.8939 156.9201 Q 472.8939 158.8271 472.1787 160.9725 L 466.4576 181.4733 Z"
-                  />
-                </g>
+<html lang="es">
 
-                <g
-                  class="masks"
-                  id="masks-welcome"
-                  fill="none"
-                  stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <mask id="mask-welcome-m">
-                    <path
-                      class="mask"
-                      stroke-width="4.45521"
-                      d="M225.94762 620.94139c-.0939.68592-1.31334 5.5356-1.19408 4.87416.081-.44907 3.78555-4.87957 4.38478-4.24776.68248.71958-.16572 4.4197.0196 4.30647 0 0 3.30447-3.76902 3.19071-3.19072-.24647 1.25288 1.17025 3.36431 1.76174 3.22988 2.14331-.62494 3.05016-2.62678 3.95413-4.91332"
-                      transform="matrix(9.38506 0 0 9.38505 -1652.44068148 -5671.45982138)"
-                    />
-                  </mask>
-                </g>
-              </svg>
-            </div>
-          </a>
-          <nav>
-            <ul>
-              <li>projects</li>
-              <li>teaching</li>
-              <li>fun</li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio - Diseñador de Producto</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">
+        <div class="lettering">
+          <svg class="welcome isVisible" xmlns="http://www.w3.org/2000/svg" viewBox="450 175 140 10" width="40"
+            height="40">
+            <defs>
+              <mask id="mask-welcome-m">
+                <rect width="100%" height="100%" fill="white" />
+                <path class="mask" stroke-width="4.45521"
+                  d="M225.94762 620.94139c-.0939.68592-1.31334 5.5356-1.19408 4.87416.081-.44907 3.78555-4.87957 4.38478-4.24776.68248.71958-.16572 4.4197.0196 4.30647 0 0 3.30447-3.76902 3.19071-3.19072-.24647 1.25288 1.17025 3.36431 1.76174 3.22988 2.14331-.62494 3.05016-2.62678 3.95413-4.91332"
+                  transform="matrix(9.38506 0 0 9.38505 -1652.44068148 -5671.45982138)"></path>
+              </mask>
+            </defs>
+            <path id="letter-welcome-m" fill="#780000" stroke="#780000" stroke-width="1"
+              style="opacity: 1; fill-opacity: 1;"
+              d="M 465.7425 185.049 Q 468.3647 183.8572 469.5566 182.4268 Q 470.9868 180.7582 472.1787 179.3278 Q 482 170 493.3946 160.0191 L 496.4935 157.8737 Q 501.2611 155.4899 504.3601 159.7807 Q 506.5055 163.1181 506.5055 166.9321 L 505.7904 182.6653 L 505.0752 188.6248 Q 506.5055 189.3399 507.2207 188.8631 Q 507.9358 188.148 508.4126 187.6711 L 519.6164 174.7987 Q 520.8083 173.6067 522.0002 172.4149 Q 523.4305 170.9845 524.8608 169.7927 Q 526.7679 168.6007 528.6749 169.0776 Q 530.8203 169.316 532.0122 171.2229 Q 532.489 172.4149 532.7274 173.8451 Q 532.9657 175.2755 533.4425 176.7056 Q 534.396 179.5662 534.8728 182.6652 Q 535.5879 185.5257 536.7798 188.6247 Q 537.2566 190.5317 538.2101 192.2004 Q 539.1636 193.6307 540.3555 195.2993 Q 543.4545 199.3518 547.9837 196.968 Q 552.7513 194.5842 557.0422 190.055 Q 561.5714 185.5257 565.3855 179.8046 Q 569.4379 174.0835 572.7753 168.124 Q 576.1126 161.9261 578.4964 156.6817 Q 579.9267 155.7282 580.4034 155.9666 Q 581.1186 156.2049 581.357 157.1585 Q 581.8337 158.1121 581.8337 159.5423 V 161.6877 Q 582.3105 167.1705 578.4964 174.5602 Q 574.6823 181.7116 568.9612 188.3863 Q 563.4784 194.8226 557.7573 199.8285 Q 552.2746 204.5962 549.1756 205.3113 Q 544.8848 207.4567 540.5939 205.7881 Q 536.5414 203.8811 532.9657 200.5437 Q 527.9598 195.2993 525.3376 187.9095 L 524.384 185.5257 Q 523.9073 184.0954 523.4305 182.9035 Q 522.0002 182.4268 521.2851 183.3803 Q 520.8083 184.0954 520.3316 184.5722 Q 517.9478 187.1944 515.8024 190.055 Q 513.6569 192.9155 511.2731 195.7761 Q 510.3196 196.968 509.1277 198.1599 Q 508.1742 199.1134 506.7439 200.3053 Q 504.1217 202.2124 501.2611 201.974 Q 498.4006 201.4972 496.4935 198.875 Q 495.54 197.6831 495.0633 196.4912 Q 494.5865 195.0609 494.1097 193.869 Q 492.9178 190.5317 492.9178 187.1944 Q 493.1562 183.6187 493.633 180.2814 Q 493.8714 177.6592 493.8714 175.5137 Q 494.1097 173.1299 494.5865 170.7461 Q 494.5865 170.031 494.3481 169.3159 Q 494.3481 168.6007 494.1097 167.4088 Q 492.9178 168.124 491.9643 168.6007 L 490.534 169.5542 L 484.3361 175.2754 Q 481.4756 177.8976 478.615 180.9965 Q 475.5161 184.5722 472.6555 188.1479 Q 470.0333 191.7236 466.9344 195.5377 Q 465.9808 196.7296 465.0273 197.6831 Q 464.3122 198.6366 463.1203 199.5902 Q 460.4981 201.7356 457.6375 201.0204 Q 454.777 200.3053 453.5851 197.2064 Q 452.8699 195.5377 452.8699 193.1539 Q 453.1083 191.2469 453.3467 189.5782 Q 453.5851 187.6711 454.0618 185.7641 Q 455.7305 179.5662 458.1143 173.8451 Q 460.2597 168.124 463.1203 162.6412 Q 464.3122 160.7342 465.7425 159.0655 L 468.603 155.2514 Q 469.0798 154.7747 470.0333 154.7747 Q 470.9868 154.5363 471.4636 154.7747 Q 472.8939 155.2514 472.8939 156.9201 Q 472.8939 158.8271 472.1787 160.9725 L 466.4576 181.4733 Z" />
+          </svg>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Mario, Developer and Game Dev Pixel Artist</h1>
+        <p>I specialize in React Native app development and game development, combining programming with pixel art to
+          create engaging experiences.</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">Mobile & Desktop Apps</h2>
+      <div class="projects-grid">
+        <div class="project-card purple">
+          <div class="project-info">
+            <h3>Kaption.ai</h3>
+            <p>AI-powered platform that automatically generates accurate subtitles in multiple languages, making video
+              content accessible to global audiences.</p>
+          </div>
+          <img src="./assets/images/kaption-ai.png" alt="Kaption AI">
+          <a href="https://apps.apple.com/es/app/captions-video-subtitles/id6504444101" class="arrow-icon"
+            target="_blank">→</a>
+        </div>
+
+        <div class="project-card light">
+          <div class="project-info">
+            <h3>Clipboard manager</h3>
+            <p>A simple yet powerful clipboard history manager for macOS that helps you access and reuse previously
+              copied
+              items.</p>
+          </div>
+          <img src="./assets/images/shiftcase-macos.png" alt="Lendscape">
+          <a href="https://apps.apple.com/es/app/clipboard-manager-shiftcase/id1451459367?mt=12" class="arrow-icon"
+            target="_blank">→</a>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="section--hero">
-        <div class="container">
-          <div id="available"></div>
-          <h1 class="hero">
-            <span class="hero-name">Mario</span>
-            <span class="hero-title">Frontend</span>
-            <span class="hero-description"> <span>CSS</span>enthusiast</span>
-          </h1>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">Pixel Art</h2>
+      <div class="projects-grid">
+        <div class="project-card dark">
+          <div class="project-info">
+            <h3>Dungeon Crawler Assets</h3>
+            <p>Complete asset pack including character sprites, animations, environment tiles, and UI elements for a
+              retro-style dungeon crawler game.</p>
+          </div>
+          <img src="./assets/images/items-dungeon-escenario.png" alt="Dungeon Items and Scenario"
+            class="pixel-art-preview">
+          <a href="./assets/images/items-dungeon-escenario.aseprite" class="arrow-icon">→</a>
         </div>
-      </section>
-      <section class="section--tutorials">
-        <div class="container">
-          <h2>teaching</h2>
+
+        <div class="project-card purple">
+          <div class="project-info">
+            <h3>Modern Dungeon</h3>
+            <p>Collection of detailed character sprites and animations for 2D platformer games, including idle, walk,
+              run, and combat animations.</p>
+          </div>
+          <img src="./assets/images/modern-dungeon.png" alt="Modern Dungeon Assets" class="pixel-art-preview">
+          <a href="./assets/images/game-elements.aseprite" class="arrow-icon">→</a>
         </div>
-      </section>
-      <section class="section--work">
-        <div class="container">
-          <h2>projects</h2>
+
+        <div class="project-card light">
+          <div class="project-info">
+            <h3>Don't Press the Button</h3>
+            <p>A quirky pixel art game where every button press leads to unexpected consequences.</p>
+          </div>
+          <img src="./assets/images/don-t-press-the-button.png" alt="Don't Press the Button Game"
+            class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/dont-press-the-button" class="arrow-icon" target="_blank">→</a>
         </div>
-      </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+        <div class="project-card dark">
+          <div class="project-info">
+            <h3>Echoes of Ryu</h3>
+            <p>A martial arts themed pixel art adventure with dynamic combat animations.</p>
+          </div>
+          <img src="./assets/images/echoes-of-ryu.png" alt="Echoes of Ryu Game" class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/echoes-of-ryu" class="arrow-icon" target="_blank">→</a>
+        </div>
+
+        <div class="project-card purple">
+          <div class="project-info">
+            <h3>Elevator Invaders</h3>
+            <p>A unique take on the classic space invaders genre set in a vertical scrolling elevator.</p>
+          </div>
+          <img src="./assets/images/elevator-invaders.png" alt="Elevator Invaders Game" class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/elevator-invaders" class="arrow-icon" target="_blank">→</a>
+        </div>
+
+        <div class="project-card light">
+          <div class="project-info">
+            <h3>Fishing Em All</h3>
+            <p>A relaxing pixel art fishing game with collectible creatures and various environments.</p>
+          </div>
+          <img src="./assets/images/fishing-em-all.png" alt="Fishing Em All Game" class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/fishing-em-all" class="arrow-icon" target="_blank">→</a>
+        </div>
+
+        <div class="project-card dark">
+          <div class="project-info">
+            <h3>Harnoon</h3>
+            <p>A mystical adventure game with detailed character and environment pixel art.</p>
+          </div>
+          <img src="./assets/images/harnoon.png" alt="Harnoon Game" class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/harnoon" class="arrow-icon" target="_blank">→</a>
+        </div>
+
+        <div class="project-card purple">
+          <div class="project-info">
+            <h3>Sanctuary</h3>
+            <p>A atmospheric pixel art game focused on exploration and discovery.</p>
+          </div>
+          <img src="./assets/images/sanctuary.png" alt="Sanctuary Game" class="pixel-art-preview">
+          <a href="https://teamplayagain.itch.io/sanctuary" class="arrow-icon" target="_blank">→</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-content">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-description">Whether you need a mobile app, game development, or pixel art assets, I'm here to
+          help bring your ideas to life.</p>
+
+        <div class="contact-links">
+          <a href="mailto:mario.diez.dev@gmail.com" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Email Me
+          </a>
+          <a href="https://github.com/mariodev12" target="_blank" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
